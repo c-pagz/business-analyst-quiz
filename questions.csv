@@ -1,0 +1,12 @@
+question_text,option_a,option_b,option_c,option_d,correct_answer
+"You are mapping a simple 'Incident Reporting' process. Which tool would you use to capture the steps in order?","User stories","Process map","Acceptance criteria","Stakeholder matrix","Process map"
+"You are gathering information about how a process currently works. Which technique is most appropriate?","Brainstorming","User story writing","As‑Is process mapping","Impact assessment","As‑Is process mapping"
+"A stakeholder says, 'We don’t know who approves this step.' Which tool helps clarify roles?","RACI matrix","User story","Data model","Wireframe","RACI matrix"
+"You need to validate that a new process meets user needs. Which BA technique is most suitable?","Requirements workshop","Risk assessment","RAID log","Data cleansing","Requirements workshop"
+"Which BA tool is used to capture what a user needs from a system?","Process map","User story","Gantt chart","Data dictionary","User story"
+"What does a diamond shape represent in a process map?","A start point","A decision","A manual task","A data input","A decision"
+"You want to identify where delays happen in a process. What should you look for?","Decision diamonds","Bottlenecks","Start points","Documents","Bottlenecks"
+"Which behaviour is considered a data‑handling risk?","Locking your screen","Using strong passwords","Leaving printed documents on your desk","Storing files in approved systems","Leaving printed documents on your desk"
+"You receive a file containing personal data that you were not expecting. What should you do first?","Forward it to your team","Save it to your desktop","Report it according to your organisation’s process","Ignore it","Report it according to your organisation’s process"
+"Which of these is an example of sensitive personal data?","Favourite food","Work phone number","Medical information","Postcode","Medical information"
+
