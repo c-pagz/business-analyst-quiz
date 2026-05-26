@@ -1,3 +1,19 @@
+"""
+Streamlit interface for the Business Analyst Quiz application.
+
+This file controls:
+- The welcome screen
+- Starting the quiz
+- Displaying questions one at a time
+- Handling user input
+- Showing the final score and personalised feedback
+- Saving results to CSV
+- Restarting the quiz
+
+The logic is kept simple and beginner‑friendly, while the Quiz and Question
+classes handle the core functionality.
+"""
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
