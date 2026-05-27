@@ -16,23 +16,30 @@ The planned user interface follows a simple, linear user journey designed to mak
 The design uses a clean layout with large buttons, high‑contrast colours, and minimal text to support accessibility. The screenshots are provided here below:
 
 ## Functional Requirements
-* Start the quiz from the home screen.
-* Load questions from a CSV file.
-* Display one question at a time with multiple‑choice answers.
-* Validate user selections and track correct answers.
-* Show final score at the end of the quiz.
-* Allow exporting results to a CSV file.
-* Store quiz data persistently so results can be reviewed later.
-* Handle invalid inputs gracefully (e.g., empty CSV, missing fields).
+
+| ID | Requirement Specification | Area Covered |
+|----|---------------------------|--------------|
+| FR‑1 | Start the quiz from the home screen | User Flow |
+| FR‑2 | Load questions from a CSV file | Data Handling |
+| FR‑3 | Display one question at a time with multiple‑choice answers | User Interface |
+| FR‑4 | Validate user selections and track correct answers | Logic / Scoring |
+| FR‑5 | Show final score at the end of the quiz | Output / Feedback |
+| FR‑6 | Allow exporting results to a CSV file | Data Export |
+| FR‑7 | Store quiz data persistently so results can be reviewed later | Data Persistence |
+| FR‑8 | Handle invalid inputs gracefully (e.g., empty CSV, missing fields) | Error Handling |
 
 ## Non‑Functional Requirements
-* Engagement through design - clear layouts, consistent spacing, and visually distinct buttons 
-* Usability - simple, intuitive interface suitable for non‑technical staff.
-* Accessibility - readable fonts, high contrast, keyboard‑friendly navigation.
-* Performance - questions load instantly; no noticeable delays.
-* Reliability - quiz should run without crashing or losing progress.
-* Maintainability - code structured using classes and pure functions.
-* Portability - runs on any machine with Python installed.
+
+| ID | Requirement Specification | Area Covered |
+|----|---------------------------|--------------|
+| NFR‑1 | Engagement through design – clear layouts, consistent spacing, visually distinct buttons | Engagement / UI |
+| NFR‑2 | Usability – simple, intuitive interface suitable for non‑technical staff | Usability |
+| NFR‑3 | Accessibility – readable fonts, high contrast, keyboard‑friendly navigation | Accessibility |
+| NFR‑4 | Performance – questions load instantly with no noticeable delays | Performance |
+| NFR‑5 | Reliability – quiz should run without crashing or losing progress | Reliability |
+| NFR‑6 | Maintainability – code structured using classes and pure functions | Maintainability |
+| NFR‑7 | Portability – runs on any machine with Python installed | Portability |
+
 
 ## Tech Stack Outline
 * Language: Python
