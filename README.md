@@ -57,6 +57,97 @@ If you want alternatives, explore GUI framework comparisons.
 
 
 ## Documentation Section 
+User Documentation
+This quiz application is designed for staff within the organisation to quickly test their knowledge of business‑analysis concepts in a simple and intuitive way. The interface is built using Streamlit, meaning it runs in a web browser and requires no technical skills.
 
+#### How to Use the Quiz
+1. Open the application When launched, the quiz opens in your browser and displays a welcome screen.
+2. Enter your name Your name is used to save your results for later review.
+3. Start the quiz Select the Start Quiz button to begin.
+4. Answer each question
+    * One question appears at a time
+    * Select one of the multiple‑choice options
+    * The next question loads automatically
+5. View your results At the end of the quiz, you will see:
+    * Your score
+    * A breakdown of correct/incorrect answers
+    * A results chart
+    * A personalised message based on your performance
+6. Download your results You can export your score to a CSV file for training records.
+7. Restart the quiz Select Restart Quiz to try again.
+This workflow ensures the quiz is accessible to non‑technical staff, with clear navigation and minimal steps.
+
+### Technical Documentation
+This section explains how developers, maintainers, or assessors can run, test, and understand the codebase.
+
+### Project Structure
+business-analyst-quiz/
+
+| File             | Description         |
+|------------------|---------------------|
+| main.py          | Streamlit UI        |
+| quiz.py          | Quiz logic          |
+| question.py      | Question model      |
+| data_manager.py  | CSV loading/saving  |
+| questions.csv    | Quiz questions      |
+| results.csv      | Saved results       |
+| test_quiz.py     | Unit tests          |
+
+
+### How to Run the Application
+1. Install dependencies:
+pip install streamlit pandas matplotlib
+1. Run the application:
+streamlit run main.py
+This launches the quiz in your browser.
+
+### Running Unit Tests
+Unit tests are located in test_quiz.py and use Python’s built‑in unittest framework.
+Run all tests with:
+python3 -m unittest test_quiz.py
+These tests validate:
+* Quiz scoring logic
+* Question progression
+* Reset behaviour
+* Correct vs incorrect answer handling
+Screenshots of passing tests should be included in the README as evidence.
+
+### Code Explanation
+question.py
+Defines the Question class, which stores:
+* question text
+* four answer options
+* the correct answer
+* a method to check correctness
+
+### quiz.py
+Controls quiz flow:
+* tracks current question
+* updates score
+* moves to next question
+* resets the quiz
+* exposes helper methods for UI
+
+### data_manager.py
+Handles:
+* loading questions from questions.csv
+* saving results to results.csv
+
+### main.py
+Implements the Streamlit interface:
+* welcome screen
+* question display
+* answer buttons
+* results screen
+* pie chart visualisation
+* CSV export
+
+### Running Tests in Continuous Integration (CI)
+The project supports CI pipelines such as GitHub Actions. A CI workflow can automatically:
+* install dependencies
+* run unit tests
+* block merges if tests fail
+This ensures the quiz remains reliable as new features are added.
+If you want, I can generate a ready‑to‑use GitHub Actions CI YAML file.
 
 ## Evaluation Section 
