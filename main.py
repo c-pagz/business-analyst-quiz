@@ -1,4 +1,4 @@
-"""
+'''python
 Streamlit interface for the Business Analyst Quiz application.
 
 This file controls:
@@ -12,13 +12,25 @@ This file controls:
 
 The logic is kept simple and beginner‑friendly, while the Quiz and Question
 classes handle the core functionality.
-"""
+''' 
 
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from quiz import Quiz
 from data_manager import load_questions, save_result
+
+# Set background colour
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-color: #227B89;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load questions once
 questions = load_questions()
