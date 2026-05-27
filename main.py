@@ -6,7 +6,7 @@ This file controls:
 - Starting the quiz
 - Displaying questions one at a time
 - Handling user input
-- Showing the final score and personalised feedback
+- Shogit wing the final score and personalised feedback
 - Saving results to CSV
 - Restarting the quiz
 
