@@ -22,11 +22,6 @@ if "quiz" not in st.session_state:
     from data_manager import load_questions
     st.session_state.quiz = Quiz(load_questions())
 
-
-from screens.welcome_screen import show_welcome
-from screens.question_screen import show_question
-from screens.results_screen import show_results
-
 import streamlit as st
 from screens.welcome_screen import show_welcome
 from screens.question_screen import show_question
