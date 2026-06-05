@@ -7,12 +7,12 @@ def load_questions():
 
     with open("questions.csv", "r") as f:
         reader = csv.reader(f)
-        next(reader)  # Skip header row
+        next(reader)
 
         for row in reader:
             text = row[0]
-            options = row[1:5]   # A, B, C, D
-            correct = row[5]     # Correct answer letter
+            options = row[1:5]   
+            correct = row[5]     
 
             q = Question(text, options, correct)
             questions.append(q)

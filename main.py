@@ -1,6 +1,5 @@
 import streamlit as st
 
-# Apply background colour styling for consistent UI design
 st.markdown(
    """
    <style>
@@ -11,8 +10,6 @@ st.markdown(
    """,
    unsafe_allow_html=True
 )
-stre
-# Session State Initialisation
 
 if "started" not in st.session_state:
    st.session_state.started = False
@@ -26,14 +23,10 @@ if "quiz" not in st.session_state:
    st.session_state.quiz = Quiz(load_questions())
 
 
-# Screen Imports
-
 from screens.welcome_screen import show_welcome
 from screens.question_screen import show_question
 from screens.results_screen import show_results
 
-
-# Screen Routing Logic
 
 if not st.session_state.started:
    show_welcome()
