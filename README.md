@@ -61,20 +61,20 @@ User Documentation
 This quiz application is designed for staff within the organisation to quickly test their knowledge of business‑analysis concepts in a simple and intuitive way. The interface is built using Streamlit, meaning it runs in a web browser and requires no technical skills.
 
 #### How to Use the Quiz
-1. Open the application When launched, the quiz opens in your browser and displays a welcome screen.
-2. Enter your name Your name is used to save your results for later review.
-3. Start the quiz Select the Start Quiz button to begin.
+1. Open the applicationWhen launched, the quiz opens in your browser and displays a welcome screen.
+2. Enter your nameYour name is used to save your results for later review.
+3. Start the quizSelect the Start Quiz button to begin.
 4. Answer each question
     * One question appears at a time
     * Select one of the multiple‑choice options
     * The next question loads automatically
-5. View your results At the end of the quiz, you will see:
+5. View your resultsAt the end of the quiz, you will see:
     * Your score
     * A breakdown of correct/incorrect answers
     * A results chart
     * A personalised message based on your performance
-6. Download your results You can export your score to a CSV file for training records.
-7. Restart the quiz Select Restart Quiz to try again.
+6. Download your resultsYou can export your score to a CSV file for training records.
+7. Restart the quizSelect Restart Quiz to try again.
 This workflow ensures the quiz is accessible to non‑technical staff, with clear navigation and minimal steps.
 
 ### Technical Documentation
@@ -143,7 +143,7 @@ Implements the Streamlit interface:
 * CSV export
 
 ### Running Tests in Continuous Integration (CI)
-The project supports CI pipelines such as GitHub Actions. A CI workflow can automatically:
+The project supports CI pipelines such as GitHub Actions.A CI workflow can automatically:
 * install dependencies
 * run unit tests
 * block merges if tests fail
